@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        .navbar {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .navbar div {
+             margin-top: 10px;
+        }
+        .navbar-brand .logo {
+            height: 50px;
+        }
+        .navbar-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .navbar a {
+            text-decoration: none;
+            font-size: 1.2rem;;
+            transition: color 0.3s ease;
+        }
+        .navbar a:hover {
+            color: red;
+        }
+        .navbar-search input {
+            padding: 5px;
+            font-size: 1rem;
+            border-radius: 3px;
+            border: none;
+            background-color: lightblue;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .column {
+            min-width: 120px;
+            background-color: silver;
+            border: 2px solid darkgrey;
+        }
+        .middle-column {
+            flex-grow: 1;
+            text-align: left;
+            padding: 0 20px;
+        }
+        .right-column {
+            display: none;
+        }
+        @media (min-width: 768px) {
+            .navbar {
+                flex-direction: row;
+            }
+            .navbar div {
+                margin-top: 0;
+            }
+            .navbar-links {
+                flex-direction: row;
+            }
+            .container {
+                flex-direction: row;
+            }
+        }
+        @media (min-width: 992px) {
+            .right-column {
+                display: block;
+            }
+        }
+        @media (min-width: 1200px) {
+            .column {
+                min-width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <a href="#">
+                    <img src="https://cdn.pixabay.com/photo/2015/05/19/07/44/browser-773215_1280.png" alt="logo" class="logo">
+                </a>
+            </div>
+            <div class="navbar-links">
+                <a href="#">Homepage</a>
+                <a href="#">About us</a>
+                <a href="#">Products</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="navbar-search">
+                <input type="text" placeholder="Search for...">
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="column left-column">Column 1</div>
+        <div class="middle-column">
+            Column 2
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla itaque, animi nesciunt sunt iste mollitia consequatur labore, rem minima natus distinctio a quisquam tempore temporibus delectus ipsam reprehenderit at facilis non ab voluptatum provident ullam. Dolorum eligendi possimus cumque, officiis reiciendis non exercitationem aperiam sit? Sed aliquam quam blanditiis accusamus pariatur id facilis cumque porro nam incidunt repellendus veritatis, temporibus optio magni possimus nobis similique placeat architecto omnis odio earum. Officiis fugit maiores, labore, impedit quod doloribus facilis dignissimos voluptatum, dolores minima repellat voluptatem omnis? Sed veniam provident sit? Aperiam asperiores deserunt dolores debitis cumque dolorem aliquid autem quos provident?</p>
+            </article>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla itaque, animi nesciunt sunt iste mollitia consequatur labore, rem minima natus distinctio a quisquam tempore temporibus delectus ipsam reprehenderit at facilis non ab voluptatum provident ullam. Dolorum eligendi possimus cumque, officiis reiciendis non exercitationem aperiam sit? Sed aliquam quam blanditiis accusamus pariatur id facilis cumque porro nam incidunt repellendus veritatis, temporibus optio magni possimus nobis similique placeat architecto omnis odio earum. Officiis fugit maiores, labore, impedit quod doloribus facilis dignissimos voluptatum, dolores minima repellat voluptatem omnis? Sed veniam provident sit? Aperiam asperiores deserunt dolores debitis cumque dolorem aliquid autem quos provident?</p>
+            </article>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla itaque, animi nesciunt sunt iste mollitia consequatur labore, rem minima natus distinctio a quisquam tempore temporibus delectus ipsam reprehenderit at facilis non ab voluptatum provident ullam. Dolorum eligendi possimus cumque, officiis reiciendis non exercitationem aperiam sit? Sed aliquam quam blanditiis accusamus pariatur id facilis cumque porro nam incidunt repellendus veritatis, temporibus optio magni possimus nobis similique placeat architecto omnis odio earum. Officiis fugit maiores, labore, impedit quod doloribus facilis dignissimos voluptatum, dolores minima repellat voluptatem omnis? Sed veniam provident sit? Aperiam asperiores deserunt dolores debitis cumque dolorem aliquid autem quos provident?</p>
+            </article>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla itaque, animi nesciunt sunt iste mollitia consequatur labore, rem minima natus distinctio a quisquam tempore temporibus delectus ipsam reprehenderit at facilis non ab voluptatum provident ullam. Dolorum eligendi possimus cumque, officiis reiciendis non exercitationem aperiam sit? Sed aliquam quam blanditiis accusamus pariatur id facilis cumque porro nam incidunt repellendus veritatis, temporibus optio magni possimus nobis similique placeat architecto omnis odio earum. Officiis fugit maiores, labore, impedit quod doloribus facilis dignissimos voluptatum, dolores minima repellat voluptatem omnis? Sed veniam provident sit? Aperiam asperiores deserunt dolores debitis cumque dolorem aliquid autem quos provident?</p>
+            </article>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla itaque, animi nesciunt sunt iste mollitia consequatur labore, rem minima natus distinctio a quisquam tempore temporibus delectus ipsam reprehenderit at facilis non ab voluptatum provident ullam. Dolorum eligendi possimus cumque, officiis reiciendis non exercitationem aperiam sit? Sed aliquam quam blanditiis accusamus pariatur id facilis cumque porro nam incidunt repellendus veritatis, temporibus optio magni possimus nobis similique placeat architecto omnis odio earum. Officiis fugit maiores, labore, impedit quod doloribus facilis dignissimos voluptatum, dolores minima repellat voluptatem omnis? Sed veniam provident sit? Aperiam asperiores deserunt dolores debitis cumque dolorem aliquid autem quos provident?</p>
+            </article>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla itaque, animi nesciunt sunt iste mollitia consequatur labore, rem minima natus distinctio a quisquam tempore temporibus delectus ipsam reprehenderit at facilis non ab voluptatum provident ullam. Dolorum eligendi possimus cumque, officiis reiciendis non exercitationem aperiam sit? Sed aliquam quam blanditiis accusamus pariatur id facilis cumque porro nam incidunt repellendus veritatis, temporibus optio magni possimus nobis similique placeat architecto omnis odio earum. Officiis fugit maiores, labore, impedit quod doloribus facilis dignissimos voluptatum, dolores minima repellat voluptatem omnis? Sed veniam provident sit? Aperiam asperiores deserunt dolores debitis cumque dolorem aliquid autem quos provident?</p>
+            </article>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla itaque, animi nesciunt sunt iste mollitia consequatur labore, rem minima natus distinctio a quisquam tempore temporibus delectus ipsam reprehenderit at facilis non ab voluptatum provident ullam. Dolorum eligendi possimus cumque, officiis reiciendis non exercitationem aperiam sit? Sed aliquam quam blanditiis accusamus pariatur id facilis cumque porro nam incidunt repellendus veritatis, temporibus optio magni possimus nobis similique placeat architecto omnis odio earum. Officiis fugit maiores, labore, impedit quod doloribus facilis dignissimos voluptatum, dolores minima repellat voluptatem omnis? Sed veniam provident sit? Aperiam asperiores deserunt dolores debitis cumque dolorem aliquid autem quos provident?</p>
+            </article>
+        </div>
+        <div class="column right-column">Column 3</div>
+    </div>
+</body>
+</html>
